@@ -1,0 +1,16 @@
+:says
+@echo off
+title ChatBot Model
+
+cls
+
+echo Hello %username%!
+
+set/p say=%username%: 
+if %say% == hi goto say1
+
+
+:say1
+echo Hi, how are you?
+pause
+goto says
